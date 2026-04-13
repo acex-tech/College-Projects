@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movieCollection>
+    <movie>
+        <movieNo>1</movieNo>
+        <movieTitle>dilwale</movieTitle>
+        <actorName>Shah Rukh Khan</actorName>
+        <releaseYear>1995</releaseYear>
+    </movie>
+    <movie>
+        <movieNo>2</movieNo>
+        <movieTitle>3 Idiots</movieTitle>
+        <actorName>amir Khan</actorName>
+        <releaseYear>2009</releaseYear>
+    </movie>
+    <movie>
+        <movieNo>3</movieNo>
+        <movieTitle>dangal</movieTitle>
+        <actorName>aamir Khan</actorName>
+        <releaseYear>2016</releaseYear>
+    </movie>
+    <movie>
+        <movieNo>4</movieNo>
+        <movieTitle>bahubali</movieTitle>
+        <actorName>prabhas</actorName>
+        <releaseYear>2015</releaseYear>
+    </movie>
+</movieCollection>

@@ -1,0 +1,48 @@
+<html>
+<body>
+
+<h2>Login Form</h2>
+
+<form onsubmit="return validate()">
+
+Username: <input type="text" id="user"><br><br>
+Password: <input type="password" id="pass"><br><br>
+
+<input type="submit" value="Login">
+
+</form>
+
+<script>
+
+function validate(){
+
+    var u = document.getElementById("user").value;
+    var p = document.getElementById("pass").value;
+
+    // check empty
+    if(u == "" || p == ""){
+        alert("Fields cannot be empty!");
+        return false;
+    }
+
+    // username length
+    if(u.length < 4){
+        alert("Username must be at least 4 characters!");
+        return false;
+    }
+
+    // password length
+    if(p.length < 6){
+        alert("Password must be at least 6 characters!");
+        return false;
+    }
+
+    // success
+    alert("Login Successful!");
+    return true;
+}
+
+</script>
+
+</body>
+</html>

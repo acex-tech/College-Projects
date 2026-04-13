@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function display(){
+                var x= new XMLHttpRequest();
+                x.open("GET","slip12.php",true);
+                x.send();
+                x.onreadystatechange=function(){
+                    if(x.readystate=4 && x.status==200){
+                        document.getElementById("show").innerHTML=x.responseText;
+                    }
+                }
+                }
+            
+        </script>
+    </head>
+    <body>
+        <input type="button" value="print" onclick="display()"><br><br>
+    <div id="show"></div>   
+    </body>
+</html>

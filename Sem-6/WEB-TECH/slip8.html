@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+           alert("exams are near,have you started preparing for?");
+
+let num1=prompt("enter first number:");
+let num2=prompt("enter second number:");
+
+let confirmMsg=`are you sure you want to add ${num1} and ${num2}?`;
+
+let confirmResult=confirm(confirmMsg);
+
+if(confirmResult){
+num1=parseInt(num1);
+num2=parseInt(num2);
+
+let sum=num1+num2;
+alert(`the sum of ${num1} and ${num2} is ${sum}`);
+}
+        </script>
+    </head>
+</html>

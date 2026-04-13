@@ -1,0 +1,37 @@
+<html>
+<body>
+
+<h3>Select Teacher</h3>
+
+<select onchange="show(this.value)">
+<option value="">Select</option>
+<option value="Ramesh">Ramesh</option>
+<option value="Suresh">Suresh</option>
+<option value="Mahesh">Mahesh</option>
+</select>
+
+<div id="result"></div>
+
+<script>
+function show(str){
+
+    if(str==""){
+        document.getElementById("result").innerHTML="";
+        return;
+    }
+
+    var x = new XMLHttpRequest();
+
+    x.open("GET","slip14.php?name="+str,true);
+    x.send();
+
+    x.onreadystatechange = function(){
+        if(x.readyState==4 && x.status==200){
+            document.getElementById("result").innerHTML = x.responseText;
+        }
+    }
+}
+</script>
+
+</body>
+</html>
